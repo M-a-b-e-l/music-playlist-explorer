@@ -6,7 +6,7 @@ Submitted by: **NAME**
 
 Estimated time spent: **#** hours spent in total
 
-Deployed Application (optional): [Music Playlist Explorer Deployed Site](ADD_LINK_HERE)
+Deployed Application (optional): [Music Playlist Explorer Deployed Site](https://m-a-b-e-l.github.io/site-unit2-project1-music-playlist-explorer-starter/)
 
 ### Application Features
 
