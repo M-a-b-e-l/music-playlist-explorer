@@ -1,4 +1,4 @@
-let data = { "playlists": [
+let playlistsData = { "playlists": [
     {
       "playlistID": 0,
       "playlist_name": "Late Night Drive",
@@ -102,7 +102,7 @@ let data = { "playlists": [
       "playlist_name": "Workout Beats",
       "playlist_creator": "Harmony Herald",
       "playlist_art": "https://picsum.photos/id/1077/200",
-      "likeCount": 0,
+      "likeCount": 460,
       "songs": [
         {
           "songID": 10,

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Featured Playlist</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header">
+                <h1>Your Recommended Playlist</h1>
+                <a href="index.html" id="header-button-link">
+                    <button id="feature-button">Explore</button>
+                </a>
+        </div>
+    </header>
+
+    <main>
+        <div class="featured-content"> 
+            <div id="feature-modal-top">
+                <img id="feautured-playlist-img" src="assets/img/playlist.png" alt="Playlist Image"> 
+                
+                <div>
+                    <h1 id="featured-playlist-name" style="color: #fff;">Playlist Name</h1>
+                    <h3 id="featured-creator" style="color: #fff;">Creator Name</h3>
+                </div>   
+            </div>
+
+            <div id="feature-modal-bottom">
+
+                <div id="feature-modal-song-card" class="featureModalSongCard">
+                        <div class="modal-img-div">
+                            <img id="modalSongImg" src="assets/img/song.png" alt="Song Image">
+                        </div>
+
+                        <div class = "song-dets">
+                            <h4 id="song-title" style="color: #fff;">Song Title</h4>
+                            <p id="song-artist-name" style="color: #fff;">Artist Name</p>
+                            <p style="color: #fff;">Album Name</p>
+                        </div>
+
+                        <div id ="song-duration" class="duration" style="color: #fff;">
+                            <p>0:00</p>
+                        </div>
+                        
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer" id="footer-color">
+            <p>Created by <a href="https://github.com/M-a-b-e-l">Mabel I.M.</a></p>
+        </div>
+    </footer>
+
+    <script src="data/data.js"></script>
+    <script src="script2.js"></script>
+</body>
+
+</html>

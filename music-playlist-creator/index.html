@@ -8,18 +8,76 @@
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     
     <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+    </style>
 </head>
 <body>
     <header>
-        <!-- Your header content here -->
+        <div class="header">
+                <h1>Music Playlist Explorer</h1>
+                <!-- <input id="search" type="text" placeholder="Search..">   -->
+                <a href="featured.html" id="header-button-link">
+                    <button id="feature-button">Your Featured Playlist</button>
+                </a>
+        </div>
     </header>
 
     <main> 
-        <!-- Your main content here -->
+        <div class="playlist-cards" id="playlist-container">
+            <div class="play-card" id="playCard" onclick="openModal({name: 'Summer Beats Festival'})">
+                <img id="play-card-img" src= "assets/img/song.png"  alt="Playlist 1">
+                <h3>Song Title</h3>
+                <p>Creator Name</p>
+                <p>4</p>
+            </div>
+        </div>
+
     </main>
 
+
+    <div id="playlist-modal" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+
+            <div id="modal-top">
+                <img id="playlist-img" src="assets/img/playlist.png" alt="Playlist Image"> 
+                
+                <div>
+                    <h1 id="playlist-name">Playlist Name</h1>
+                    <h3 id="modal-creator">Creator Name</h3>
+                </div>   
+            </div>
+            <button id="shuffle-button" class="button-17" role="button">Shuffle</button>
+
+            <div id="modal-bottom">
+
+                <div id="modal-song-card" class="modalSongCard">
+                        <div class="modal-img-div">
+                            <img id="modalSongImg" src="assets/img/song.png" alt="Song Image">
+                        </div>
+
+                        <div class = "song-dets">
+                            <h4 id="song-title">Song Title</h4>
+                            <p id="song-artist-name">Artist Name</p>
+                            <p>Album Name</p>
+                        </div>
+
+                        <div id ="song-duration" class="duration">
+                            <p>0:00</p>
+                        </div>
+                        
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
     <footer>
-        <!-- Your footer content here -->
+        <div class="footer" id="footer-color">
+            <p>Created by <a href="https://github.com/M-a-b-e-l">Mabel I.M.</a></p>
+        </div>
     </footer>
     <script src="data/data.js"></script>
     <script src="script.js"></script>
